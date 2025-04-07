@@ -38,8 +38,7 @@ let baseCSettings: [CSetting] =  [
     .headerSearchPath("src/core/basetypes/icu-ucsdet/include"),
     .headerSearchPath("src/core/zip"),
     .headerSearchPath("src/core/zip/MiniZip"),
-    .define("HAVE_CFNETWORK", to: "1"),
-    .define("USE_SASL", to: "1")
+    .define("HAVE_CFNETWORK", to: "1")
 ]
 
 let objCSettings: [CSetting] = [
@@ -318,7 +317,7 @@ let package = Package(
             targets: ["MailCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jsflax/libetpan/", branch: "master"),
+        .package(url: "https://github.com/ju135/libetpan/", branch: "jsflax/master"),
         .package(url: "https://github.com/jsflax/tidy-html5/", branch: "master"),
         .package(url: "https://github.com/jsflax/ctemplate/", branch: "master")
     ],
