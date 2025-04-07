@@ -39,6 +39,7 @@ let baseCSettings: [CSetting] =  [
     .headerSearchPath("src/core/zip"),
     .headerSearchPath("src/core/zip/MiniZip"),
     .define("HAVE_CFNETWORK", to: "1")
+    .define("USE_SASL", to: "1")
 ]
 
 let objCSettings: [CSetting] = [
