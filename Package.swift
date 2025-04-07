@@ -38,7 +38,7 @@ let baseCSettings: [CSetting] =  [
     .headerSearchPath("src/core/basetypes/icu-ucsdet/include"),
     .headerSearchPath("src/core/zip"),
     .headerSearchPath("src/core/zip/MiniZip"),
-    .define("HAVE_CFNETWORK", to: "1")
+    .define("HAVE_CFNETWORK", to: "1"),
     .define("USE_SASL", to: "1")
 ]
 
